@@ -29,7 +29,7 @@
     "url": "https://github.com/Pomax/react-onclickoutside/issues"
   },
   "scripts": {
-    "build": "build:es && build:commonjs",
+    "build": "npm run build:es && npm run build:commonjs",
     "build:es": "cross-env BABEL_ENV=es babel src -d es",
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel src -d lib",
     "lint": "eslint src/*.js ./test",
